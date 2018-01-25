@@ -40,6 +40,7 @@ ext {
     calligraphyVersion = '2.2.0'
     glideVersion = '3.7.0'
     butterKnifeVersion = '8.6.0'
+    intuitSdpVersion = '1.0.5'
 
     rx2FastAndroidNetworking = '1.0.1'
 
