@@ -25,3 +25,27 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+// Versions in a single place
+ext {
+    // Sdk and tools
+    minSdkVersion = 21
+    targetSdkVersion = 27
+    compileSdkVersion = 27
+    buildToolsVersion = '27.0.2'
+
+    // App dependencies
+    supportLibraryVersion = '27.0.2'
+    gsonVersion = '2.8.0'
+    calligraphyVersion = '2.2.0'
+    glideVersion = '3.7.0'
+
+    rx2FastAndroidNetworking = '1.0.1'
+
+    dagger2Version = '2.8'
+    rxjava2Version = '2.0.6'
+    rxandroidVersion = '2.0.1'
+
+    timberVersion = '4.5.1'
+
+}
