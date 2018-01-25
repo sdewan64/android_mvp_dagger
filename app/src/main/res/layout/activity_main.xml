@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.shaheed.androidmvpdaggertest.MainActivity">
+    tools:context="com.shaheed.androidmvpdaggertest.ui.main.MainActivity"
+    android:padding="@dimen/_24sdp"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
 
-    <TextView
+    <EditText
+        android:id="@+id/activityMain_editText_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_name"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/activityMain_editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/activityMain_button_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/login"
+        />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
